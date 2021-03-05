@@ -17,34 +17,6 @@ axios
     })
     .catch(error => console.error(error));
 
-    
-/*const DUMMY_DATA =[
-    {id:'d1', value:10, region: 'USA'},
-    {id:'d2', value:11, region: 'India'},
-    {id:'d3', value:12, region: 'China'},
-    {id:'d4', value:6, region: 'Germany'}
-];
-const xScale = d3.scaleBand().domain(DUMMY_DATA.map((dataPoint) => dataPoint.region)).rangeRound([0, 250]).padding(0.1); // alla element har samma bredd
-const yScale = d3.scaleLinear().domain([0, 15]).range([200, 0]); //ger olika höjd
-
-const container = d3.select('svg')
-    .classed('container', true)
-
-const bars = container
-    .selectAll('.bar')
-    .data(DUMMY_DATA)
-    .enter() // hittar datan som inte visas än (render)
-    .append('rect') //lägger till divar för varje datapunkt som inte visas än
-    .classed('bar', true) //ger divarna css-klassen bar
-    .attr('width', xScale.bandwidth())
-    .attr('height', (data) => 200 - yScale(data.value)) //tar den totala max höjden och tar bort varje-värde
-    .attr('x', data => xScale(data.region)) //xScale hämtar varje datapunkt för data.region (dvs fyra olika regioner på x-axeln)
-    .attr('y', data => yScale(data.value)); //hämtar varje datapunkt för data.value (dvs fyra olika höjder/värden på y6 axeln)
-
-console.log('tja');
-*/
-
-
 //BarChart
 function barChart(){
 const xScale = d3.scaleBand().domain(sdb.map((dataPoint) => dataPoint.text)).rangeRound([0, 250]).padding(0.1); // alla element har samma bredd
