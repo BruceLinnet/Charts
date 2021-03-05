@@ -1,0 +1,10 @@
+.container{
+    width: 250px;
+    height: 200px;
+    border: purple 1px solid;
+
+}
+
+.bar{
+    fill: purple;
+}
